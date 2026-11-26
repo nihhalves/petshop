@@ -1,0 +1,549 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #faf9f4;
+    color: #344b3b;
+}
+
+:root {
+    --verde: #345b43;
+    --verde-claro: #e8efe5;
+    --creme: #faf9f4;
+    --dourado: #c89b62;
+}
+
+
+/* MENU */
+
+header {
+    background-color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 15px #00000008;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 800;
+    color: var(--verde);
+}
+
+.logo span {
+    color: var(--dourado);
+}
+
+.logo small {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #405346;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--dourado);
+}
+
+.nav-button {
+    background: var(--verde);
+    color: white;
+    padding: 12px 22px;
+    border-radius: 30px;
+}
+
+.nav-button:hover {
+    background: #c89b62;
+    color: white;
+}
+
+
+/* INÍCIO */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px 10%;
+    gap: 50px;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.tag {
+    color: #b1844c;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    line-height: 1.2;
+    color: var(--verde);
+    margin: 25px 0;
+}
+
+.hero h1 span {
+    color: var(--dourado);
+}
+
+.hero p {
+    color: #69756a;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: var(--verde);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: var(--dourado);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px #00000020;
+}
+
+.btn-secondary {
+    color: var(--verde);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.info {
+    margin-top: 35px;
+    font-size: 13px;
+    color: #7a856f;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 440px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 48% 48% 20px 20px;
+    box-shadow: 15px 15px 0 #e4eadf;
+}
+
+.floating-card {
+    position: absolute;
+    bottom: 25px;
+    left: -35px;
+    background: white;
+    padding: 18px 23px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #00000015;
+    font-weight: 700;
+    color: var(--verde);
+}
+
+
+/* BENEFÍCIOS */
+
+.benefits {
+    background: var(--verde);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 38px 8%;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.benefits div {
+    max-width: 250px;
+}
+
+.benefits h3 {
+    margin: 10px 0;
+}
+
+.benefits p {
+    font-size: 13px;
+    color: #dce7da;
+}
+
+
+/* SOBRE */
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 100px 10%;
+}
+
+.about-image img {
+    width: 430px;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 12px 12px 0 #e4eadf;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 39px;
+    color: var(--verde);
+    margin: 20px 0;
+}
+
+.about-text p {
+    color: #69756a;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.about-text .btn-primary {
+    margin-top: 10px;
+}
+
+
+/* SERVIÇOS */
+
+.services {
+    background: #eef2e9;
+    padding: 90px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: var(--verde);
+    margin: 15px 0;
+}
+
+.section-title p {
+    color: #7a856f;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: white;
+    width: 310px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #00000008;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px #00000015;
+}
+
+.service-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content span {
+    font-size: 27px;
+}
+
+.card-content h3 {
+    color: var(--verde);
+    margin: 12px 0;
+    font-size: 21px;
+}
+
+.card-content p {
+    color: #7a856f;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* PRODUTOS */
+
+.products {
+    padding: 90px 8%;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 300px;
+    background: white;
+    border-radius: 18px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px #00000010;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+.product-card h3 {
+    color: var(--verde);
+    margin: 18px 0 8px;
+}
+
+.product-card p {
+    color: #7a856f;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+
+/* FRASE */
+
+.phrase {
+    background: var(--verde);
+    color: white;
+    padding: 75px 15%;
+    text-align: center;
+}
+
+.phrase h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    line-height: 1.6;
+}
+
+.phrase p {
+    margin-top: 20px;
+    color: #e5c69e;
+}
+
+
+/* CONTATO */
+
+.contact {
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.contact h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: var(--verde);
+    margin: 20px 0;
+}
+
+.contact p {
+    color: #7a856f;
+    margin-bottom: 30px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background: #263e30;
+    color: white;
+    padding: 50px 10% 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.footer-logo p {
+    font-size: 13px;
+    color: #c5d3c4;
+    margin: 12px 0 25px;
+    font-weight: 400;
+}
+
+.footer-info {
+    line-height: 2.2;
+    color: #dce7da;
+    font-size: 14px;
+}
+
+.copyright {
+    border-top: 1px solid #ffffff25;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 12px;
+    color: #c5d3c4;
+}
+
+
+/* WHATSAPP */
+
+.whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px #00000030;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+.whatsapp:hover {
+    transform: scale(1.12);
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 440px;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 430px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero {
+        padding: 60px 7%;
+    }
+
+    .hero-image img {
+        height: 320px;
+    }
+
+    .floating-card {
+        left: 0;
+        font-size: 12px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .about-text h2,
+    .contact h2 {
+        font-size: 30px;
+    }
+
+    .phrase h2 {
+        font-size: 23px;
+    }
+
+    .benefits {
+        padding: 40px 20px;
+    }
+
+}
